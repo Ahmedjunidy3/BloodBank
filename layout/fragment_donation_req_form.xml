@@ -1,0 +1,105 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:fillViewport="true"
+    >
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+
+        <com.google.android.material.appbar.AppBarLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:theme="@style/AppTheme">
+
+            <androidx.appcompat.widget.Toolbar
+                android:layout_width="match_parent"
+                android:layout_height="?android:actionBarSize"
+                android:background="@color/colorPrimary"
+                app:contentInsetEnd="@dimen/_70sdp"
+                app:contentInsetStart="@dimen/_70sdp">
+
+                <TextView
+                    android:id="@+id/fragment_donation_req_toolbar"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:gravity="center"
+                    android:text="Donation Request"
+                    android:textColor="@android:color/white"
+                    android:textSize="@dimen/_18ssp" />
+
+            </androidx.appcompat.widget.Toolbar>
+
+        </com.google.android.material.appbar.AppBarLayout>
+
+        <EditText
+            android:id="@+id/fragment_donation_req_et_name"
+            style="@style/EditTextStyle"
+            android:hint="Name"
+            android:importantForAutofill="no"
+            android:inputType="textPersonName" />
+
+        <EditText
+            android:id="@+id/fragment_donation_req_et_age"
+            style="@style/EditTextStyle"
+            android:hint="Age"
+            android:importantForAutofill="no"
+            android:inputType="number" />
+
+        <Spinner
+            android:id="@+id/fragment_donation_req_spin_blood_type"
+            style="@style/SpinnerStyle"
+            />
+
+        <EditText
+            android:id="@+id/fragment_donation_req_et_no_of_blood_bags"
+            style="@style/EditTextStyle"
+            android:hint="No of Required Blood Bags"
+            android:importantForAutofill="no"
+            android:inputType="number" />
+
+        <EditText
+            android:id="@+id/fragment_donation_req_et_hospital_address"
+            style="@style/EditTextStyle"
+            android:drawableEnd="@drawable/ic_compass"
+            android:hint="Hospital Address"
+            android:importantForAutofill="no"
+            android:inputType="text" />
+
+        <Spinner
+            android:id="@+id/fragment_donation_req_spin_govern"
+            style="@style/SpinnerStyle"
+            />
+
+        <Spinner
+            android:id="@+id/fragment_donation_req_spin_city"
+            style="@style/SpinnerStyle"
+            />
+
+        <EditText
+            android:id="@+id/fragment_donation_req_et_phone_no"
+            style="@style/EditTextStyle"
+            android:hint="Phone No."
+            android:importantForAutofill="no"
+            android:inputType="phone" />
+
+        <EditText
+            android:id="@+id/fragment_donation_req_et_notes"
+            style="@style/EditTextBigStyle"
+            android:hint="Notes"
+            android:importantForAutofill="no" />
+
+        <Button
+            android:id="@+id/fragment_donation_req_btn_send"
+            style="@style/ButtonStyle"
+            android:layout_marginTop="@dimen/_20sdp"
+            android:layout_marginBottom="@dimen/_70sdp"
+            android:text="@string/send" />
+
+    </LinearLayout>
+
+</ScrollView>

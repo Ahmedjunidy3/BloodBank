@@ -1,0 +1,46 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.cardview.widget.CardView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="200dp"
+    app:cardCornerRadius="20dp"
+    android:layout_marginStart="15dp"
+    android:layout_marginEnd="15dp"
+    android:layout_marginBottom="15dp">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <ImageView
+            android:id="@+id/post_iv_item_recyc_view_post"
+            android:layout_width="match_parent"
+            android:layout_height="200dp"
+            android:contentDescription="post iv"
+            android:scaleType="fitXY"
+            android:src="@drawable/brittanycolette" />
+
+        <ImageView
+            android:id="@+id/unfav_iv_item_recyc_view_post"
+            android:layout_height="wrap_content"
+            android:layout_width="wrap_content"
+            android:layout_alignParentEnd="true"
+            android:layout_marginEnd="@dimen/_12sdp"
+            android:layout_marginTop="12dp"
+            android:src="@drawable/iv_unfav_post"
+            android:contentDescription="unfav ic" />
+
+        <TextView
+            android:id="@+id/title_tv_item_recyc_view_post"
+            android:layout_width="match_parent"
+            android:layout_height="40dp"
+            android:layout_alignBottom="@+id/post_iv_item_recyc_view_post"
+            android:background="@drawable/cornered_tv_red"
+            android:gravity="center"
+            android:text="كيف تحمى أبنائك من الأمراض المعديه؟"
+            android:textColor="@android:color/white"
+            android:textSize="16sp" />
+    </RelativeLayout>
+
+
+</androidx.cardview.widget.CardView>

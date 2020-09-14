@@ -1,0 +1,89 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:fillViewport="true">
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@drawable/login_background">
+
+            <ImageView
+                android:id="@+id/logo_iv_frag_login"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerHorizontal="true"
+                android:layout_marginTop="30dp"
+                android:contentDescription="iv logo"
+                android:scaleType="centerCrop"
+                android:src="@drawable/login_screen_logo" />
+
+            <EditText
+                android:id="@+id/phone_no_et_frag_login"
+                style="@style/EditTextStyle"
+                android:layout_below="@+id/logo_iv_frag_login"
+                android:hint="رقم التليفون"
+                android:importantForAutofill="no"
+                android:inputType="phone" />
+
+            <EditText
+                android:id="@+id/pass_et_frag_login"
+                style="@style/EditTextStyle"
+                android:layout_below="@+id/phone_no_et_frag_login"
+                android:hint="كلمه السر"
+                android:importantForAutofill="no"
+                android:inputType="textPassword" />
+
+            <CheckBox
+                android:id="@+id/remember_cb_frag_login"
+                style="@style/TextStyle7"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/pass_et_frag_login"
+                android:layout_alignStart="@+id/pass_et_frag_login"
+                android:layout_marginTop="@dimen/_5sdp"
+                android:layout_marginEnd="3dp"
+                android:buttonTint="@android:color/white"
+                android:text="@string/remember_me" />
+
+            <TextView
+                android:id="@+id/reset_pass_tv_frag_login"
+                style="@style/TextStyle7"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/pass_et_frag_login"
+                android:layout_alignEnd="@+id/pass_et_frag_login"
+                android:layout_marginTop="@dimen/_10sdp"
+                android:text="@string/forgot_pass" />
+
+            <Button
+                android:id="@+id/login_btn_frag_login"
+                android:layout_width="@dimen/_100sdp"
+                android:layout_height="@dimen/_25sdp"
+                android:layout_below="@id/reset_pass_tv_frag_login"
+                android:layout_centerHorizontal="true"
+                android:layout_marginTop="25dp"
+                android:background="@drawable/cornered_btn"
+                android:backgroundTint="@color/colorGray"
+                android:text="@string/log_in"
+                android:textSize="16sp" />
+        </RelativeLayout>
+
+    </ScrollView>
+
+    <TextView
+        android:id="@+id/register_tv_frag_login"
+        style="@style/TextStyle8"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/_30sdp"
+        android:gravity="center"
+        android:layout_alignParentBottom="true"
+        android:background="@color/colorGray"
+        android:text="@string/register_msg" />
+
+</RelativeLayout>

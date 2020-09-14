@@ -1,0 +1,117 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:fillViewport="true"
+    >
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@drawable/login_background"
+        android:orientation="vertical">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:layout_marginTop="30dp"
+            android:layout_marginBottom="25dp"
+            android:text="@string/create_new_account"
+            android:textColor="@android:color/white"
+            android:textSize="18sp"
+            android:textStyle="bold" />
+
+        <EditText
+            android:id="@+id/activity_register_et_name"
+            style="@style/EditTextStyle"
+            android:drawableStart="@drawable/ic_person_red"
+            android:drawablePadding="3dp"
+            android:hint="@string/name2"
+            android:inputType="textPersonName"
+            android:importantForAutofill="no" />
+
+        <EditText
+            android:id="@+id/activity_register_et_email"
+            style="@style/EditTextStyle"
+            android:drawableStart="@drawable/ic_mail"
+            android:drawablePadding="10dp"
+            android:hint="@string/email"
+            android:importantForAutofill="no"
+            android:inputType="textEmailAddress" />
+
+        <EditText
+            android:id="@+id/activity_register_et_date_birth"
+            style="@style/EditTextStyle"
+            android:cursorVisible="false"
+            android:drawableStart="@drawable/ic_calender"
+            android:drawablePadding="10dp"
+            android:hint="@string/date_of_birth"
+            android:importantForAutofill="no"
+            android:inputType="date" />
+
+        <Spinner
+            android:id="@+id/activity_register_spin_blood_type"
+            style="@style/SpinnerStyle"
+            />
+
+        <EditText
+            android:id="@+id/activity_register_et_donation_date"
+            style="@style/EditTextStyle"
+            android:drawableStart="@drawable/ic_calender"
+            android:drawablePadding="10dp"
+            android:hint="@string/last_donation_date"
+            android:importantForAutofill="no"
+            android:inputType="date" />
+
+        <Spinner
+            android:id="@+id/activity_register_spin_govern"
+            style="@style/SpinnerStyle"
+            />
+
+        <Spinner
+            android:id="@+id/activity_register_spin_city"
+            style="@style/SpinnerStyle"
+            />
+
+        <EditText
+            android:id="@+id/activity_register_et_phone_no"
+            style="@style/EditTextStyle"
+            android:drawableStart="@drawable/ic_phone"
+            android:drawablePadding="10dp"
+            android:hint="@string/phone_no"
+            android:importantForAutofill="no"
+            android:inputType="phone" />
+
+        <EditText
+            android:id="@+id/activity_register_et_password"
+            style="@style/EditTextStyle"
+            android:drawableStart="@drawable/ic_lock"
+            android:drawablePadding="10dp"
+            android:hint="@string/password"
+            android:importantForAutofill="no"
+            android:inputType="textPassword" />
+
+        <EditText
+            android:id="@+id/activity_register_et_password_confirm"
+            style="@style/EditTextStyle"
+            android:layout_marginBottom="30dp"
+            android:drawableStart="@drawable/ic_lock"
+            android:drawablePadding="10dp"
+            android:hint="@string/password_confirm"
+            android:importantForAutofill="no"
+            android:inputType="textPassword" />
+
+        <Button
+            android:id="@+id/activity_register_btn_register"
+            android:layout_width="@dimen/_100sdp"
+            android:layout_height="@dimen/_25sdp"
+            android:layout_gravity="center"
+            android:layout_marginBottom="30dp"
+            android:background="@drawable/cornered_btn"
+            android:backgroundTint="@color/colorGray"
+            android:text="تسجيل" />
+
+    </LinearLayout>
+
+</ScrollView>

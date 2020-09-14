@@ -1,0 +1,136 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:fillViewport="true">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+
+        <com.google.android.material.appbar.AppBarLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:theme="@style/AppTheme">
+
+            <androidx.appcompat.widget.Toolbar
+                android:id="@+id/fragment_notificat_settings_toolbar"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@color/colorPrimary"
+                app:contentInsetEnd="@dimen/_16sdp"
+                app:contentInsetStart="@dimen/_16sdp">
+
+                <ImageView
+                    android:id="@+id/fragment_notificat_settings_arrow_back_iv"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:contentDescription="arrow back iv"
+                    android:src="@drawable/ic_arrow_back" />
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:gravity="center"
+                    android:text="@string/notifications_settings"
+                    android:textColor="@android:color/white"
+                    android:textSize="@dimen/_18ssp" />
+
+            </androidx.appcompat.widget.Toolbar>
+        </com.google.android.material.appbar.AppBarLayout>
+
+        <androidx.cardview.widget.CardView
+            style="@style/CardViewStyle"
+            android:layout_marginTop="@dimen/_15sdp">
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="16dp"
+                android:layout_marginTop="16dp"
+                android:layout_marginEnd="16dp"
+                android:background="@drawable/iv_text" />
+        </androidx.cardview.widget.CardView>
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="@dimen/_20sdp"
+            android:layout_marginTop="@dimen/_15sdp"
+            android:layout_marginEnd="@dimen/_20sdp"
+            android:background="@drawable/cornered_btn"
+            android:backgroundTint="@color/colorOrange">
+
+            <ImageView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerVertical="true"
+                android:layout_marginStart="@dimen/_10sdp"
+                android:layout_marginEnd="@dimen/_10sdp"
+                android:contentDescription="add mark ic"
+                android:src="@drawable/ic_expand" />
+
+            <TextView
+                style="@style/TextStyle6"
+                android:text="@string/blood_types" />
+        </RelativeLayout>
+
+
+        <androidx.cardview.widget.CardView style="@style/CardViewStyle">
+
+            <androidx.recyclerview.widget.RecyclerView
+                android:id="@+id/fragment_notificat_settings_rv_blood_types"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:paddingStart="@dimen/_10sdp"
+                android:paddingEnd="@dimen/_10sdp"
+                />
+        </androidx.cardview.widget.CardView>
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="@dimen/_20sdp"
+            android:layout_marginTop="@dimen/_15sdp"
+            android:layout_marginEnd="@dimen/_20sdp"
+            android:background="@drawable/cornered_btn"
+            android:backgroundTint="@color/colorOrange">
+
+            <ImageView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerVertical="true"
+                android:layout_marginStart="@dimen/_10sdp"
+                android:layout_marginEnd="@dimen/_10sdp"
+                android:contentDescription="add mark ic"
+                android:src="@drawable/ic_expand" />
+
+            <TextView
+                style="@style/TextStyle6"
+                android:text="@string/governorates" />
+        </RelativeLayout>
+
+        <androidx.cardview.widget.CardView
+            style="@style/CardViewStyle"
+            >
+
+            <androidx.recyclerview.widget.RecyclerView
+                android:id="@+id/fragment_notificat_settings_rv_governs"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:paddingStart="@dimen/_10sdp"
+                android:paddingEnd="@dimen/_10sdp"/>
+        </androidx.cardview.widget.CardView>
+
+        <Button
+            android:id="@+id/fragment_notificat_settings_btn_save"
+            style="@style/ButtonStyle3"
+            android:layout_marginTop="@dimen/_20sdp"
+            android:layout_marginBottom="@dimen/_60sdp"
+            android:text="@string/save" />
+
+    </LinearLayout>
+
+</ScrollView>

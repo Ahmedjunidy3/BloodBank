@@ -1,0 +1,131 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+
+    <com.google.android.material.appbar.AppBarLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:theme="@style/AppTheme">
+
+        <androidx.appcompat.widget.Toolbar
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@color/colorPrimary">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:text="@string/more"
+                android:textColor="@android:color/white"
+                android:textSize="@dimen/_18ssp"
+                />
+
+        </androidx.appcompat.widget.Toolbar>
+    </com.google.android.material.appbar.AppBarLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_marginStart="@dimen/_15sdp"
+        android:layout_marginTop="@dimen/_20sdp"
+        android:layout_marginEnd="@dimen/_15sdp"
+        android:orientation="vertical">
+
+        <TextView
+            android:id="@+id/favs_tv_frag_more"
+            style="@style/TextStyle9"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:drawableStart="@drawable/ic_favorite"
+            android:drawablePadding="@dimen/_10sdp"
+            android:text="@string/the_favorites" />
+
+        <TextView
+            style="@style/TextStyle9"
+            android:layout_width="match_parent"
+            android:layout_height="1dp"
+            android:layout_marginTop="@dimen/_5sdp"
+            android:background="@android:color/darker_gray" />
+
+        <TextView
+            android:id="@+id/contact_us_tv_frag_more"
+            style="@style/TextStyle9"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/_8sdp"
+            android:drawableStart="@drawable/ic_mail"
+            android:drawablePadding="@dimen/_10sdp"
+            android:text="@string/contact_us" />
+
+        <TextView
+            style="@style/TextStyle9"
+            android:layout_width="match_parent"
+            android:layout_height="1dp"
+            android:layout_marginTop="@dimen/_5sdp"
+            android:background="@android:color/darker_gray" />
+
+        <TextView
+            android:id="@+id/about_us_tv_frag_more"
+            style="@style/TextStyle9"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/_8sdp"
+            android:drawableStart="@drawable/ic_light"
+            android:drawablePadding="@dimen/_10sdp"
+            android:text="@string/about_us" />
+
+        <TextView
+            style="@style/TextStyle9"
+            android:layout_width="match_parent"
+            android:layout_height="1dp"
+            android:layout_marginTop="@dimen/_5sdp"
+            android:background="@android:color/darker_gray" />
+
+        <TextView
+            android:id="@+id/review_us_tv_frag_more"
+            style="@style/TextStyle9"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/_8sdp"
+            android:drawableStart="@drawable/ic_star"
+            android:drawablePadding="@dimen/_10sdp"
+            android:text="@string/evaluate_app_on_store" />
+
+        <TextView
+            style="@style/TextStyle9"
+            android:layout_width="match_parent"
+            android:layout_height="1dp"
+            android:layout_marginTop="@dimen/_5sdp"
+            android:background="@android:color/darker_gray" />
+
+        <TextView
+            android:id="@+id/notificat_settings_tv_frag_more"
+            style="@style/TextStyle9"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/_8sdp"
+            android:drawableStart="@drawable/ic_settings"
+            android:drawablePadding="@dimen/_10sdp"
+            android:text="@string/notifications_settings" />
+
+        <TextView
+            style="@style/TextStyle9"
+            android:layout_width="match_parent"
+            android:layout_height="1dp"
+            android:layout_marginTop="@dimen/_5sdp"
+            android:background="@android:color/darker_gray" />
+
+        <TextView
+            android:id="@+id/log_out_tv_frag_more"
+            style="@style/TextStyle9"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/_8sdp"
+            android:drawableStart="@drawable/ic_exit"
+            android:drawablePadding="@dimen/_10sdp"
+            android:text="@string/log_out" />
+    </LinearLayout>
+
+</LinearLayout>
